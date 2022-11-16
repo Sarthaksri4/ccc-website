@@ -1,0 +1,102 @@
+#navbar201{
+    width: 100%;
+    background: transparent;
+    background-color:white;
+    -webkit-backdrop-filter: blur(0.08rem);
+  backdrop-filter: blur(0.08rem);
+  }
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+  .navbar-brand{
+    font-size: 1.9rem;
+    color : #565387
+  }
+  .navbar-brand img{
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+  }
+  .navbar a{
+    font-size : 1.3rem;
+    text-transform:capitalize;
+  }
+  .menu_active{
+    font-weight: bold;
+    border-bottom: 1px solid #565387;
+    color: red;
+  }
+  .navbar a:hover{
+    color : #3498db;
+  }
+  .navbar-nav{
+    position: absolute;
+    left : 70rem; 
+  }
+  .nav-item{
+    text-align: justify;
+    justify-content: space-around;
+    position: relative;
+  }
+  @media only screen and (max-width: 991px) and (min-width: 802px)
+  {
+    .navbar-brand{
+      font-size: 1.5rem;
+    }
+    .menu_active{
+      font-weight: bold;
+      border-bottom: none;
+    }
+    .navbar-nav{
+        position: relative;
+        left : 1.2rem;
+      }
+      .navbar-toggler{
+        position: relative;
+        left : 23.4rem;
+      }
+  } 
+  @media only screen and (max-width: 800px) and (min-width: 601px)
+  {
+    .navbar-brand{
+        font-size: 1.5rem;
+      }
+      .menu_active{
+        font-weight: bold;
+        border-bottom: none;
+      }
+    .navbar-nav{
+      position: relative;
+      left : 1.2rem;
+    }
+    .navbar-toggler{
+      position: relative;
+      left : 13.4rem;
+    }
+}
+@media(max-width : 600px){
+    .navbar-brand{
+        font-size: 1.5rem;
+      }
+      .menu_active{
+        font-weight: bold;
+        border-bottom: none;
+      }
+    .navbar-nav{
+      position: relative;
+      left : 0.2rem;
+    }
+    .navbar-toggler{
+      position: relative;
+      left : 8.2rem;
+    }
+}
+@media screen and (min-width: 0rem) and (max-width:420rem) {
+.navbar-toggler {
+    position: absolute;
+    left: 19rem;
+}
+}
+ 
